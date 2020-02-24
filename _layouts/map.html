@@ -493,11 +493,11 @@
       //initiate search after parcel data has loaded
       search = new L.Control.Search({
         layer: parcels,
-        propertyName: 'index',
+        propertyName: 'NAAM',
         initial: false,
         zoom: 17,
         collapsed: false,
-        textPlaceholder: 'Parcel ID or Deed',
+        textPlaceholder: 'Naam',
         minLength: 4
       }).addTo(map);
       search.on('search_locationfound', function(e) {
